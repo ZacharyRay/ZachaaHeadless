@@ -25,6 +25,8 @@ export default {};
         a {
             font-size: $menu;
         }
-       
+        .nuxt-link-exact-active {
+            color: $primary_text_hover_color;
+        }
     }
 </style>

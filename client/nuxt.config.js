@@ -41,10 +41,18 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/strapi'
   ],
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+    entities: ['blog-posts'],
+    key: 'zachaakey'
+  },
   styleResources: {
-    scss: ['./assets/scss/*.scss']
+    sass: [],
+    scss: ['./assets/scss/*.scss'],
+    hoistUseStatements: true
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
