@@ -1,14 +1,16 @@
 <template>
     <div>
-        <h1>Contact</h1>
+        <PageTitle page_title="CONTACT"/>
     </div>
 </template>
 
 <script>
+import PageTitle from "../components/PageTitle.vue";
     export default {
-        layout: 'homepage',
-        name: 'contact'
-    }
+    layout: "homepage",
+    name: "contact",
+    components: { PageTitle }
+}
 </script>
 
 <style lang="scss" scoped>

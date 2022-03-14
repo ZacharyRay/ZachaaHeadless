@@ -1,9 +1,7 @@
 <template>
   <header>
     <nav>
-      <div class="logo">
-        <img src="/Logo.svg" alt="Zachaa logo" />
-      </div>
+     
       <div class="menu">
         <nuxt-link to="/">HOME</nuxt-link>
         <nuxt-link to="/work">WORK</nuxt-link>
@@ -19,10 +17,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.logo {
-  img {
-    width: 100%;
-    max-height: 75px;
-  }
-}
+    .menu {
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+        height: 100%;
+        a {
+            font-size: $menu;
+        }
+       
+    }
 </style>

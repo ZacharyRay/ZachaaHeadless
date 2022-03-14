@@ -1,7 +1,41 @@
+// typography, add these into new stylesheet
+
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$p: 18px;
+$a: 15px;
+$menu: 20px;
+
+// font families, add these into new stylesheet
+
+$roboto: "Roboto", sans-serif;
+$fredoka: "Fredoka", sans-serif;
+
+
 body {
-  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $roboto;
   h1 {
-      font-size: 25px;
-    font-family: "Fredoka", sans-serif;
+    font-size: $h1;
+    font-family: $fredoka;
   }
+  p{
+    font-size: $p;
+  }
+  a {
+    text-decoration: none;
+    color: $headline_color;
+    font-size: $a;
+    font-family: $roboto;
+    font-weight: bold;
+
+  }
+  a:hover {
+    color: $primary_text_hover_color;
+  }
+ 
 }
+
