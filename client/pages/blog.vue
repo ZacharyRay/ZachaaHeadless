@@ -15,6 +15,11 @@
             return {
                 blogArchive: []
             }
+        },
+        methods: {
+            async getBlogPosts() {
+                const results = ''
+            }
         }
     }
 </script>
